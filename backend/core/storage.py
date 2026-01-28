@@ -1,8 +1,8 @@
 import json
-from pathlib import path
+from pathlib import Path
 from .exceptions import TaskNotFoundError
 
-DATA_FILE = path.Path("tasks.json")
+DATA_FILE = Path("tasks.json")
 
 def load_tasks():
     if not DATA_FILE.exists():
